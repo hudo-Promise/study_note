@@ -1,0 +1,26 @@
+pip install django==版本号（1.11.8）
+
+django-admin startproject 项目名
+
+python manage.py runserver (指定端口号，默认8000)启动服务
+
+
+模板
+创建模板文件夹
+配置模板路径
+       'DIRS': [os.path.join(BASE_DIR, 'templates')],
+
+调用模板
+方式 一
+from django.template import loader
+
+t = loader.get_template("xxx.html")
+html = t.render(字典数据)
+方式 二
+from django.shortcuts import render
+return render(request, "xxx.html")
+
+
+创建应用
+python manage.py startapp 应用名
+在settings添加应用

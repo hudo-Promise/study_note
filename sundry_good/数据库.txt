@@ -1,0 +1,1 @@
+select sname, cname from student inner join Student_Course on Student.id = Student_Course.s_id inner join Course on Course.id = Student_Course.c_id
