@@ -37,7 +37,7 @@
     * redis持久化
         * RDB快照：save 同步的  会产生阻塞 bgsave: 异步的   不会阻塞
         * AOF: 将修改写入文件  定期重写
-        * 混合持久化 ROB + AOF
+        * 混合持久化 RDB + AOF
     * redis和mysql如何保持数据一直
         * 延时双删， 先删除redis的缓存数据 再更新mysql 延迟几百毫秒再次删除redis 
 
